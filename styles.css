@@ -10,17 +10,17 @@ html, body {
 
 body {
   font-family: 'Lato', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.grid-container {
-  flex: 1 0 auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.grid-container,
+.grid-x {
+  height: 100vh;
+  min-height: 100vh;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .logo {
@@ -69,14 +69,6 @@ body {
   max-width: 250px;
 }
 
-.grid-container,
-.grid-x {
-  height: 100vh;
-  min-height: 100vh;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
 .cell.img-cell {
   padding: 0 !important;
   margin: 0 !important;
@@ -117,8 +109,5 @@ body {
     width: 100%;
     max-width: 200px;
     margin: 10px auto;
-  }
-  .info {
-    text-align: center;
   }
 }
